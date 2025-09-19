@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -10,70 +10,76 @@ body {
   font-family: "Yu Gothic", sans-serif;
   background-color: #f9f3eb;
   color: #5a2c12;
-  margin-right: auto;
-  margin-left: auto;
+
   line-height: 1.8;
 }
 
-a{
-  color:#533f23;
+a {
+  color: #533f23;
 }
 
-p{
-  color:#533f23;
-  line-height:150%;
+p {
+  color: #533f23;
+  line-height: 150%;
 }
 
-header{
+header {
   padding: 20px;
-  background-color:#3d2d18;
-  color:#ffffff ;
+  background-color: #3d2d18;
+  color: #ffffff;
 }
-  header h1{
-    margin-right: auto;
-  }
-  header ul{
-    margin-top: 20px;
-    display: flex;
-  }
-  header li{
-    width: auto;
-    margin-right: 20px;
-  }
 
-.site-header, .site-footer {
+header h1 {
+  margin-right: auto;
+}
+
+header ul {
+  margin-top: 20px;
+  display: flex;
+}
+
+header li {
+  width: auto;
+  margin-right: 20px;
+}
+
+.site-header,.site-footer {
   background-color: #7b4b2c;
   color: #fff;
   text-align: center;
   padding: 1rem;
 }
 
-section{
+section {
   max-width: 1200px;
   padding: 40px;
   margin-bottom: 40px;
-  text-align: center;
+  /* text-align: center; */
   background-color: #f9f3eb;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-  section h1{
-    margin-bottom: 10px;
-    color:#533f23;
-  }
-  section p {
-    margin-bottom: 40px;
-  }
+section h1 {
+  margin-bottom: 10px;
+  color: #533f23;
+}
 
-  section a{
-    color:#533f23;
-  }
+section p {
+  margin-bottom: 40px;
+}
+
+section a {
+  color: #533f23;
+}
 
 .about {
-  text-align: center;
+  /* text-align: center; */
   padding: 3rem 1rem;
 }
 
-.data, .active {
+.data,
+.active {
   display: flex;
 }
 
@@ -105,11 +111,13 @@ section{
 }
 
 .image-item img {
-  width: 1200px;
+  width: 100%;
+  height: auto;
 }
 
 .img-item img {
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .author {
@@ -121,26 +129,45 @@ section{
   width: 1200px;
 }
 
-footer{
+footer {
   padding: 30px;
   background-color: #3d2d18;
-  color:#ffffff;
+  color: #ffffff;
 }
 
-@media screen and (max-width:767px) 
-  /*　画面サイズが767px以下の場合読み込む　*/ { 
-    .grid {
-    grid-template-columns: 1fr;
-    }
-}
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
+
   /*　画面サイズが768px以上の場合読み込む　*/
-  h1 { font-size:20pt;}
+  h1 {
+    font-size: 20pt;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  #about {
+    text-align: center;
+  }
+
+  #active {
+    text-align: center;
+  }
+  .greenbox {
+    display: flex;
+  }
+
+  .greenbox-item {
+    flex: 2;
+  }
+
+  .greenbox figure {
+    flex: 1;
+  }
+
 }
 
 
-html{
+html {
   scroll-behavior: smooth;
- }
-
+}
