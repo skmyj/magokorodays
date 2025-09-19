@@ -1,76 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Yu Gothic", sans-serif;
-    background-color: #f9f3eb;
-    color: #5a2c12;
-    margin: 0;
-    line-height: 1.8;
+  font-family: "Yu Gothic", sans-serif;
+  background-color: #f9f3eb;
+  color: #5a2c12;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.8;
+}
+
+a{
+  color:#533f23;
+}
+
+p{
+  color:#533f23;
+  line-height:150%;
+}
+
+header{
+  padding: 20px;
+  background-color:#3d2d18;
+  color:#ffffff ;
+}
+  header h1{
+    margin-right: auto;
   }
-  
-  .site-header, .site-footer {
-    background-color: #7b4b2c;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .top {
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .title {
-    font-size: 2rem;
-    color: #9b3b1f;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-img {
-    max-width: 300px;
-    margin: 1rem auto;
-    display: block;
-  }
-  
-  .data-section, .record-section {
+  header ul{
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background-color: #3b773b;
-    color: #fff;
-    padding: 2rem 1rem;
-    border-radius: 12px;
-    margin: 2rem auto;
-    width: 80%;
   }
-  
-  .data-box, .record-box {
-    max-width: 400px;
+  header li{
+    width: auto;
+    margin-right: 20px;
   }
-  
-  .btn {
-    background-color: #fff;
-    color: #3b773b;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
+
+.site-header, .site-footer {
+  background-color: #7b4b2c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+section{
+  max-width: 1200px;
+  padding: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: #f9f3eb;
+}
+
+  section h1{
+    margin-bottom: 10px;
+    color:#533f23;
   }
-  
-  .btn:hover {
-    opacity: 0.9;
+  section p {
+    margin-bottom: 40px;
   }
-  
-  .author-box {
-    border: 1px solid #7b4b2c;
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: center;
-    margin: 3rem auto;
-    width: 70%;
+
+  section a{
+    color:#533f23;
   }
-  
+
+.about {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.data, .active {
+  display: flex;
+}
+
+.greenbox {
+  align-items: center;
+  gap: 2rem;
+  background-color: #3b773b;
+  color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  text-align: left;
+  width: 1000px;
+}
+
+
+.btn {
+  background-color: #fff;
+  color: #3b773b;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.image-item img {
+  width: 1200px;
+}
+
+.img-item img {
+  width: 300px;
+}
+
+.author {
+  border: 1px solid #7b4b2c;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem auto;
+  width: 1200px;
+}
+
+footer{
+  padding: 30px;
+  background-color: #3d2d18;
+  color:#ffffff;
+}
+
+@media screen and (max-width:767px) 
+  /*　画面サイズが767px以下の場合読み込む　*/ { 
+    .grid {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:768px){
+  /*　画面サイズが768px以上の場合読み込む　*/
+  h1 { font-size:20pt;}
+}
+
+
+html{
+  scroll-behavior: smooth;
+ }
+
