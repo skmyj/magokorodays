@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,6 @@ body {
   font-family: "Yu Gothic", sans-serif;
   background-color: #f9f3eb;
   color: #5a2c12;
-
   line-height: 1.8;
 }
 
@@ -21,31 +22,36 @@ a {
 p {
   color: #533f23;
   line-height: 150%;
+  font-size: 15px;
 }
 
 header {
   padding: 20px;
   background-color: #3d2d18;
-  color: #ffffff;
+  color: #f9f3eb;
 }
 
 header h1 {
   margin-right: auto;
+  font-size: 20px;
 }
 
 header ul {
   margin-top: 20px;
   display: flex;
+  font-size: 15px;
+  color: #f9f3eb;
 }
 
 header li {
   width: auto;
   margin-right: 20px;
+  color: #f9f3eb;
 }
 
 .site-header,.site-footer {
   background-color: #7b4b2c;
-  color: #fff;
+  color: #f9f3eb;
   text-align: center;
   padding: 1rem;
 }
@@ -78,8 +84,7 @@ section a {
   padding: 3rem 1rem;
 }
 
-.data,
-.active {
+.data,.active {
   display: flex;
 }
 
@@ -87,7 +92,7 @@ section a {
   align-items: center;
   gap: 2rem;
   background-color: #3b773b;
-  color: #fff;
+  color: #f9f3eb;;
   padding: 2rem 2rem;
   border-radius: 12px;
   margin: 2rem auto;
@@ -95,19 +100,21 @@ section a {
   width: 1000px;
 }
 
-
 .btn {
-  background-color: #fff;
+  background-color: #f9f3eb;;
   color: #3b773b;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .btn:hover {
   opacity: 0.9;
+  background-color: #f9f3eb;;
+  color: #a71919;
 }
 
 .image-item img {
@@ -126,7 +133,6 @@ section a {
   padding: 2rem;
   text-align: center;
   margin: 3rem auto;
-  width: 1200px;
 }
 
 footer {
@@ -134,7 +140,6 @@ footer {
   background-color: #3d2d18;
   color: #ffffff;
 }
-
 
 @media screen and (min-width:768px) {
 
@@ -150,23 +155,56 @@ footer {
     text-align: center;
   }
 
-  #active {
-    text-align: center;
-  }
   .greenbox {
     display: flex;
   }
 
   .greenbox-item {
-    flex: 2;
+    flex: 3;
   }
 
   .greenbox figure {
-    flex: 1;
+    flex: 2;
+  }
+
+  .author {
+    border: 1px solid #7b4b2c;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem auto;
+    width: 1200px;
   }
 
 }
 
+.scroll-infinity {
+	overflow: hidden;
+}
+.scroll-infinity ul {
+	animation: marquee-right 20s linear infinite;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: max-content;
+}
+.scroll-infinity ul li {
+	list-style: none;
+	padding: 0 5px;
+}
+.scroll-infinity img {
+	display: block;
+	width: 100%;
+  height: 100%;
+}
+@keyframes marquee-right {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
 
 html {
   scroll-behavior: smooth;
