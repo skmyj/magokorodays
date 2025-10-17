@@ -164,7 +164,7 @@ section {
 section h1 {
   margin-bottom: 10px;
   font-family: "Zen Maru Gothic", sans-serif;
-  font: 10px;
+  font-size: 32px;
   color: #533f23;
 }
 
@@ -172,6 +172,11 @@ section h1 {
 .about {
   /* text-align: center; */
   padding: 3rem 1rem;
+}
+
+/* スマホで縦並び */
+.data {
+  flex-direction: column;
 }
 
 .data,.active {
