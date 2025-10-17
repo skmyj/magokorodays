@@ -9,21 +9,12 @@
 }
 
 body {
-  font-family: "Yu Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   background-color: #f9f3eb;
   color: #5a2c12;
   line-height: 1.8;
 }
 
-a {
-  color: #f9f3eb;
-}
-
-p {
-  color: #f9f3eb;
-  line-height: 150%;
-  font-size: 15px;
-}
 
 header {
   position: relative;
@@ -34,6 +25,7 @@ header {
 
 header h1 {
   margin-right: auto;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20px;
 }
 
@@ -41,6 +33,7 @@ header ul {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 15px;
   color: #f9f3eb;
 }
@@ -169,17 +162,11 @@ section {
 
 section h1 {
   margin-bottom: 10px;
+  font-family: "Zen Maru Gothic", sans-serif;
   font: 10px;
   color: #533f23;
 }
 
-section p {
-  margin-bottom: 40px;
-}
-
-section a {
-  color: #f9f3eb;
-}
 
 .about {
   /* text-align: center; */
@@ -202,6 +189,11 @@ section a {
   width: 1000px;
 }
 
+.greenbox a,
+.greenbox p {
+  color: #f9f3eb;
+}
+
 .btn {
   background-color: #f9f3eb;;
   color: #3b773b;
@@ -209,6 +201,7 @@ section a {
   padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
@@ -232,6 +225,44 @@ section a {
 .img2-item img {
   width: 30%;
   height: auto;
+}
+
+.download-btn {
+  display: inline-block;
+  width: 250px;
+  padding: 20px;
+  border-radius: 4px;
+  border: none; 
+  text-align: center;
+  background: #3d2d18;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1rem;
+  margin: 3rem 3rem;
+}
+
+.download-btn:hover, .download-btn:focus {
+  background: #a71919;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #3d2d18;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin: 3rem 3rem;
+}
+
+.back-btn:hover {
+  background: #a71919;
 }
 
 @media screen and (min-width:768px) {
@@ -306,7 +337,7 @@ section a {
 	overflow: hidden;
 }
 .scroll-infinity ul {
-	animation: marquee-right 30s linear infinite;
+	animation: marquee-right 60s linear infinite;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -314,11 +345,11 @@ section a {
 }
 .scroll-infinity ul li {
 	list-style: none;
-	padding: 0 5px;
+	padding: 0px;
 }
 .scroll-infinity img {
 	display: block;
-	width: 100%;
+	width: 70%;
   height: 100%;
 }
 
