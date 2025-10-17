@@ -19,8 +19,8 @@ body {
 header {
   position: relative;
   padding: 20px;
-  color: #f9f3eb;
-  background-color: #3d2d18;
+  color: #3d2d18;
+  background-color: #f9f3eb;
 }
 
 header h1 {
@@ -35,18 +35,18 @@ header ul {
   flex-direction: column;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 15px;
-  color: #f9f3eb;
+  color: #3d2d18;
 }
 
 header li {
   width: auto;
   margin-right: 20px;
-  color: #f9f3eb;
+  color: #3d2d18;
 }
 
 .site-header,.site-footer {
-  background-color: #3d2d18;
-  color: #f9f3eb;
+  background-color: #f9f3eb;
+  color: #3d2d18;
   padding: 30px;
 }
 
@@ -60,6 +60,7 @@ nav {
   z-index: 50;
   background-color: rgba(0, 0, 0, .5);
   transition: transform .5s;
+  color: #3d2d18;
 }
 
 #navBtn {
@@ -80,7 +81,7 @@ nav {
   z-index: 100;
   width: 40px;
   height: 40px;
-  border: 1px solid #f9f3eb;
+  border: 1px solid #3d2d18;;
   border-radius: 2px;
 }
 
@@ -99,7 +100,7 @@ nav {
   top: 18px;
   left: 30%;
   width: 40%;
-  border-bottom: 2px solid #f9f3eb;
+  border-bottom: 2px solid #3d2d18;;
   transition: transform .5s;
 }
 
@@ -276,7 +277,7 @@ section h1 {
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    color: #f9f3eb;
+    color: #3d2d18;;
   }
   
   nav {
@@ -292,12 +293,29 @@ section h1 {
   }
 
   nav ul li a {
-    color: #f9f3eb;
+    color: #3d2d18;
   }
 
   #navBtn,
   .open {
     display: none;
+  }
+
+	.data {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .data h3,
+  .data figure,
+  .action h3,
+  .action figure{
+    width: 50%;
+  }
+
+  .data div,
+  .action div {
+    width: 100%;
   }
 }
 
@@ -331,26 +349,6 @@ section h1 {
     width: 100%;
   }
 
-}
-
-.scroll-infinity {
-	overflow: hidden;
-}
-.scroll-infinity ul {
-	animation: marquee-right 60s linear infinite;
-	display: flex;
-	margin: 0;
-	padding: 0;
-	width: max-content;
-}
-.scroll-infinity ul li {
-	list-style: none;
-	padding: 0px;
-}
-.scroll-infinity img {
-	display: block;
-	width: 70%;
-  height: 100%;
 }
 
 @keyframes marquee-right {
