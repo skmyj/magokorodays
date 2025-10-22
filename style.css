@@ -234,11 +234,18 @@ section h1 {
 .img-item img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .img2-item img {
   width: 30%;
   height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .download-btn {
@@ -277,6 +284,15 @@ section h1 {
 
 .back-btn:hover {
   background: #a71919;
+}
+
+.pagetop img{
+  width: 120px;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; /*ナビゲーションより下*/
 }
 
 @media screen and (min-width:768px) {
@@ -320,15 +336,18 @@ section h1 {
   }
 
   .data h3,
-  .data figure,
-  .action h3,
-  .action figure{
+  .data figure{
     width: 50%;
   }
 
-  .data div,
-  .action div {
+  .data div {
     width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
   }
 }
 
