@@ -192,6 +192,10 @@ section h1 {
   display: flex;
 }
 
+figure {
+  padding: 15px;
+}
+
 .greenbox {
   align-items: center;
   gap: 2rem;
@@ -206,6 +210,8 @@ section h1 {
 .greenbox a,
 .greenbox p {
   color: #f9f3eb;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem auto;
 }
 
 .btn {
