@@ -11,10 +11,13 @@
 body {
   font-family: "Zen Maru Gothic", sans-serif;
   background-color: #f9f3eb;
-  color: #5a2c12;
+  color: #3d2d18;
   line-height: 1.8;
 }
 
+#wrap{
+  overflow: hidden;
+}
 
 header {
   position: relative;
@@ -44,10 +47,16 @@ header li {
   color: #3d2d18;
 }
 
-.site-header,.site-footer {
+.site-header{
   background-color: #f9f3eb;
   color: #3d2d18;
   padding: 30px;
+}
+.site-footer{
+  background-color: #f9f3eb;
+  color: #3d2d18;
+  padding: 30px;
+  opacity: 0.5;
 }
 
 nav {
@@ -179,7 +188,7 @@ section h1 {
   flex-direction: column;
 }
 
-.data,.active {
+.data{
   display: flex;
 }
 
@@ -192,7 +201,6 @@ section h1 {
   border-radius: 12px;
   margin: 2rem auto;
   text-align: left;
-  width: 1000px;
 }
 
 .greenbox a,
@@ -332,6 +340,7 @@ section h1 {
 
   .greenbox {
     display: flex;
+    width: 1000px;
   }
 
   .greenbox-item {
