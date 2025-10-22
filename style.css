@@ -336,6 +336,18 @@ figure {
     display: none;
   }
 
+  .greenbox {
+  display: flex;
+  }
+
+  .greenbox-item {
+    flex: 2;
+  }
+
+  .greenbox figure {
+    flex: 1;
+  }
+
 	.data {
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,7 +357,7 @@ figure {
   .data figure{
     width: 50%;
   }
-
+  
   .data div {
     width: 100%;
   }
@@ -364,16 +376,7 @@ figure {
   }
 
   .greenbox {
-    display: flex;
     width: 1000px;
-  }
-
-  .greenbox-item {
-    flex: 3;
-  }
-
-  .greenbox figure {
-    flex: 2;
   }
 
   .img2-item img {
