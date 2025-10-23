@@ -293,7 +293,7 @@ figure {
 }
 
 .pagetop img{
-  width: 120px;
+  width: 150px;
   height: auto;
   position: fixed;
   bottom: 20px;
@@ -369,6 +369,7 @@ figure {
   }
 }
 
+
 @media screen and (min-width:1200px) {
 
   #about {
@@ -390,6 +391,10 @@ figure {
     margin: 3rem auto;
     width: 100%;
   }
+
+  .pagetop img{
+    width: 180px;
+  } 
 
 }
 
