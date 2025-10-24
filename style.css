@@ -194,6 +194,7 @@ section h1 {
 
 figure {
   padding: 15px;
+  width: 300px;
 }
 
 .greenbox {
@@ -353,9 +354,16 @@ figure {
     flex-wrap: wrap;
   }
 
-  .data h3,
+  .data h3{
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .data figure{
-    width: 50%;
+    width: 30%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .data div {
