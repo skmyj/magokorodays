@@ -245,7 +245,7 @@ figure {
 }
 
 .img2-item img {
-  width: 30%;
+  width: 150px;
   height: auto;
 }
 
@@ -304,6 +304,10 @@ figure {
 
 @media screen and (min-width:768px) {
   /*　画面サイズが768px以上の場合読み込む　*/
+  #about {
+    text-align: center;
+  }
+
   h1 {
     font-size: 20pt;
   }
@@ -348,6 +352,13 @@ figure {
   .greenbox figure {
     flex: 1;
   }
+  
+  .author {
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem auto;
+    width: 100%;
+  }
 
 	.data {
     flex-direction: row;
@@ -379,25 +390,8 @@ figure {
 
 
 @media screen and (min-width:1200px) {
-
-  #about {
-    text-align: center;
-  }
-
   .greenbox {
     width: 1000px;
-  }
-
-  .img2-item img {
-    width: 15%;
-    height: auto;
-  }
-  
-  .author {
-    padding: 2rem;
-    text-align: center;
-    margin: 3rem auto;
-    width: 100%;
   }
 
   .pagetop img{
