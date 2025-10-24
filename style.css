@@ -15,6 +15,10 @@ body {
   line-height: 1.8;
 }
 
+a{
+  color: #3d2d18;
+}
+
 #wrap{
   overflow: hidden;
 }
@@ -195,6 +199,7 @@ section h1 {
 figure {
   padding: 15px;
   width: 300px;
+  margin: 0 auto;
 }
 
 .greenbox {
@@ -274,6 +279,10 @@ figure {
 
 .download-btn:hover, .download-btn:focus {
   background: #a71919;
+}
+
+.back-btn-container{
+  text-align: right;
 }
 
 .back-btn {
@@ -361,13 +370,7 @@ figure {
   }
 
 	.data {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .data h3{
-    width: 70%;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 
@@ -375,10 +378,12 @@ figure {
     width: 30%;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -100px;
   }
   
-  .data div {
-    width: 100%;
+  .data-text {
+    width: 70%;
+    padding: 1rem 0;
   }
 
   .grid {
