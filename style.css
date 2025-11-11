@@ -30,8 +30,13 @@ header {
   background-color: #f9f3eb;
 }
 
+header img {
+width: 60%;
+}
+
 header h1 {
   margin-right: auto;
+  margin-bottom: 0;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20px;
 }
@@ -177,7 +182,7 @@ section {
 section h1 {
   margin-bottom: 10px;
   font-family: "Zen Maru Gothic", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   color: #533f23;
 }
 
@@ -262,7 +267,6 @@ figure {
 
 .download-btn {
   display: inline-block;
-  width: 250px;
   padding: 20px;
   border-radius: 4px;
   border: none; 
@@ -287,8 +291,8 @@ figure {
 
 .back-btn {
   display: inline-block;
-  background: #3d2d18;
-  color: #fff;
+  background: #3b773b;
+  color: #f9f3eb;
   padding: 0.5em 1.2em;
   border-radius: 4px;
   text-decoration: none;
@@ -303,8 +307,9 @@ figure {
 }
 
 .pagetop img{
-  width: 150px;
+  width: 120px;
   height: auto;
+  filter: drop-shadow(5px 5px 5px #787878);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -320,6 +325,10 @@ figure {
   h1 {
     font-size: 20pt;
   }
+
+  header img {
+    width: 40%;
+    }
 
   header ul {
     margin-top: 20px;
@@ -362,6 +371,10 @@ figure {
     flex: 1;
   }
   
+  section h1 {
+    font-size: 32px;
+  }
+  
   .author {
     padding: 2rem;
     text-align: center;
@@ -395,6 +408,10 @@ figure {
 
 
 @media screen and (min-width:1200px) {
+ header img {
+    width: 30%;
+    }
+
   .greenbox {
     width: 1000px;
   }
