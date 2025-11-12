@@ -330,7 +330,6 @@ figure {
     }
 
   header ul {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     font-size: 15px;
@@ -410,6 +409,14 @@ figure {
  header img {
     width: 30%;
     }
+
+ header ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 18px;
+  color: #3d2d18;
+}
 
   .greenbox {
     width: 1000px;
