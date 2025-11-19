@@ -421,6 +421,13 @@ figure {
 
 }
 
+@media screen and (min-width:1201px) {
+  header img {
+     width: 460px;
+     }
+ }
+
+
 @keyframes marquee-right {
 	from {
 		transform: translateX(0%);
