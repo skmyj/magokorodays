@@ -172,7 +172,7 @@ nav ul li a {
 section {
   max-width: 1200px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
   /* text-align: center; */
   background-color: #f9f3eb;
   margin-right: auto;
@@ -183,8 +183,155 @@ section h1 {
   margin-bottom: 10px;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 24px;
-  color: #533f23;
+  color: #3d2d18;
 }
+
+.character-card {
+    display: block; /* モバイルでは縦積みにする */
+    padding: 2rem 2rem;
+    margin: 2rem 1rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+  }
+
+.character-image {
+    text-align: center; /* この要素内のインライン要素（画像）を中央に配置 */
+  }
+
+  .character-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1rem; /* モバイルでの画像下の余白 */
+  }
+
+  /* キャラクター名とローマ字表記のスタイル */
+  .character-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3d2d18;
+  }
+
+  .roman-name {
+    font-size: 0.9rem;
+    color: #3b773b;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .introduction {
+    line-height: 1.8;
+    color: #3d2d18;
+    text-align: justify;
+  }
+
+  .sub-character-grid {
+    display: grid;
+    /* モバイル: 1列 (縦並び) */
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .sub-character-item {
+    display: flex; /* 画像とテキストを横並びにする */
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+
+  .sub-character-item img {
+    /* 丸い画像にする設定 */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover;
+    flex-shrink: 0; /* 縮小させない */
+  }
+
+  .sub-character-details h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3b773b;
+    margin: 0;
+  }
+
+  .sub-character-details p {
+    font-size: 0.9rem;
+    color: #3d2d18;
+    margin-top: 0.25rem;
+  }
+
+  .step-card-grid {
+    display: grid;
+    /* スマホ・PC共通で1列 (縦並び) に設定 */
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .step-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+  /* STEPカード内の画像スタイル (既存) */
+  .step-card-image {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .step-card-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* 丸くする */
+    border: 3px solid #3b773b;
+    padding: 3px;
+    background-color: #fff;
+  }
+  
+  .step-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3b773b;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9f2e9;
+    margin-bottom: 1rem;
+    text-align: center; /* カード内の小見出しも中央寄せ */
+  }
+  
+  .step-card ul {
+    list-style: none; /* リストマーカーを削除 */
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .step-card ul li {
+    font-size: 1rem;
+    color: #3d2d18;
+    margin-bottom: 0.7rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .step-card ul li::before {
+    content: '▶'; /* オリジナルのマーカーを三角に変更 */
+    color: #3b773b;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
 
 .about {
@@ -210,37 +357,37 @@ figure {
 .greenbox {
   align-items: center;
   gap: 2rem;
-  background-color: #3b773b;
-  color: #f9f3eb;;
-  padding: 2rem 2rem;
+  background-color: #f9f3eb;
+  color: #3d2d18;;
+  padding: 0rem 2rem;
   border-radius: 12px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   text-align: left;
 }
 
 .greenbox a,
 .greenbox p {
-  color: #f9f3eb;
+  color: #3d2d18;
   padding: 0.5rem 0.5rem;
   margin: 1rem auto;
 }
 
 .btn {
-  background-color: #f9f3eb;;
-  color: #3b773b;
+  background-color: #3b773b;;
+  color: #f9f3eb;
   border: none;
   padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 450;
 }
 
 .btn:hover {
   opacity: 0.9;
-  background-color: #f9f3eb;;
-  color: #a71919;
+  background-color: #a71919;;
+  color: #f9f3eb;
 }
 
 .image-item img {
@@ -265,6 +412,23 @@ figure {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+.gallery-item {
+    text-align: center;
+  }
+  
+.gallery-item img {
+    width: 100%;
+    height: auto; /* 画像の高さを固定 */
+    object-fit: cover; /* 画像がコンテナを埋めるように調整 */
+  }
+
+.gallery-caption {
+    /* キャプションのスタイル */
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: #3d2d18;;
+  }
 
 .download-btn {
   display: inline-block;
@@ -307,6 +471,11 @@ figure {
   background: #a71919;
 }
 
+.next-btn {
+  display: flex; 
+  justify-content: space-between;
+  }
+
 .pagetop img{
   width: 120px;
   height: auto;
@@ -322,6 +491,47 @@ figure {
   #about {
     text-align: center;
   }
+
+  .character-card {
+      display: flex; /* Flexboxを適用して横並びにする */
+      gap: 3rem; /* 画像とテキストの間隔 */
+      padding: 3rem;
+    }
+
+  .character-image {
+    flex: 1;
+    min-width: 0;
+  }
+
+   .character-image img {
+    width: 50%;
+    height: auto;
+    margin-left: 2rem;
+  } 
+
+  .character-details {
+    flex: 2;
+    min-width: 0;
+  }
+
+  .sub-character-grid {
+      /* PC: 2列にする */
+      grid-template-columns: 1fr 1fr; 
+    }
+    
+    .sub-character-item {
+      /* PC版ではグリッドの各セル内でテキストを縦積みに戻す (見た目の調整) */
+      display: block; 
+      text-align: center;
+    }
+    
+    .sub-character-item img {
+      margin: 0 auto 0.75rem auto; /* 中央寄せと下の余白 */
+    }
+    
+    .sub-character-details {
+      text-align: center;
+    }
 
   h1 {
     font-size: 20pt;
@@ -408,6 +618,16 @@ figure {
 }
 
 
+@media screen and (min-width:868px) {
+   .character-card {
+    text-align: center;
+    margin: 2rem auto;
+    width: 868px;
+
+  }
+    } 
+
+
 @media screen and (min-width:1200px) {
  header img {
     width: 30%;
@@ -420,15 +640,14 @@ figure {
   .pagetop img{
     width: 180px;
   } 
-
 }
 
 @media screen and (min-width:1201px) {
   header img {
      width: 460px;
      }
+ 
  }
-
 
 @keyframes marquee-right {
 	from {

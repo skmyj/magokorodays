@@ -26,8 +26,9 @@
       <nav>
         <ul>
           <li><a href="index.html">サイトについて</a></li>
-          <li><a href="data.html">データを見る</a></li>
-          <li><a href="action.html">活動を始める</a></li>
+          <li><a href="data.html">1.データを見る</a></li>
+          <li><a href="look.html">2.アイデアを見つける</a></li>
+          <li><a href="action.html">3.活動を始める</a></li>
         </ul>
       </nav>
     </header>
@@ -55,21 +56,70 @@
         <p>そんな家族間の話題や絆のきっかけに、ぜひご活用ください。</p>
       </section>
 
-      <!-- character section -->
+    <!-- character section -->
       <section id="character">
-        <div class="image-item">
-        <picture>
-          <source media="(max-width:767px)" srcset="images/character_small_maru.png" alt="what is cocolobo">
-          <source media="(min-width:768px)" srcset="images/character_pc_maru.png" alt="what is cocolobo">
-          <img src="images/character_pc_maru.png" alt="what is cocolobo">
-          </picture>
+        <h1>キャラクター紹介</h1>
+      </section> 
+      <section id="character-sakura" class="character-card">
+        <!-- 1. 画像ブロック (比率 1) -->
+        <div class="character-image">
+          <img src="images/cocolobo.png" alt="キャラクターの画像（ココロボ）" />
         </div>
-      </section>
+        
+        <!-- 2. 文字情報ブロック (比率 2) -->
+        <div class="character-details">
+            <h2 class="character-name">
+              ココロボ
+            </h2>
+            <span class="roman-name">
+              cocolobo
+            </span>
+            <p class="introduction">
+             胸のハートで、「まごころ」をキャッチ。孫と祖父母の“まごころ”をつなぐ、「まごころ活動応援サポーター」として、みんなのはじめの一歩を一緒に支えます。
+            </p>
+        </div>
+    </section>
 
+      <div class="sub-character-grid">
+      <!-- サブキャラ1 -->
+      <div class="sub-character-item">
+        <img src="images/aset3.svg" alt="サブキャラ1の画像" />
+        <div class="sub-character-details">
+          <h3>まこと</h3>
+          <p>大学生の男の子。</p>
+        </div>
+      </div>
+       <!-- サブキャラ2 -->
+      <div class="sub-character-item">
+        <img src="images/aset4.svg" alt="サブキャラ2の画像" />
+        <div class="sub-character-details">
+          <h3>こころ</h3>
+          <p>大学生の女の子。</p>
+        </div>
+      </div>
+      
+      <!-- サブキャラ3 -->
+      <div class="sub-character-item">
+        <img src="images/aset1.svg" alt="サブキャラ3の画像" />
+        <div class="sub-character-details">
+          <h3>おじいちゃん</h3>
+          <p>散歩が趣味。</p>
+        </div>
+      </div>
+      
+      <!-- サブキャラ4 -->
+      <div class="sub-character-item">
+        <img src="images/aset2.svg" alt="サブキャラ4の画像" />
+        <div class="sub-character-details">
+          <h3>おばあちゃん</h3>
+          <p>編み物が大好き。</p>
+        </div>
+      </div>
+    </div>
 
       <!-- Data section -->
       <section id="data">
-        <h1>1.データを見る</h1>
+        <h1>STEP1.データを見る</h1>
           <div class="greenbox">
             <div class="greenbox-item">
               <h3>大学生100人に聞いてみた！<br>祖父母と、最近どう？？</h3>
@@ -85,9 +135,29 @@
           </div>
       </section>
 
+   <!-- Activity record -->
+   <section id="look">
+    <h1>STEP2.まごころアイデアを見つけよう！</h1>
+      <div class="greenbox">
+        <div class="greenbox-item">
+        <h3>何かできることはないだろうか？</h3>
+        <h3>みんなでアイデア探し！</h3>
+        <ul>
+          <li>・何から始めたらいいんだろう？</li>
+          <li>・何かしたいけどアイデアが浮かばない</li>
+          <li>・小さな一歩を踏み出そう！</li>
+        </ul>
+        <button class="btn" onclick="location.href='look.html'" >アイデアを見つける</button>
+      </div>
+      <figure class="img-item"><img src="images/looklobo.png" alt="active">
+      </figure>
+    </div>
+  </section>
+
+
       <!-- Activity record -->
       <section id="active">
-        <h1>2.まごころ活動を始めよう！</h1>
+        <h1>STEP3.まごころ活動を始めよう！</h1>
           <div class="greenbox">
             <div class="greenbox-item">
             <h3>まごころ活動を記録して、</h3>
