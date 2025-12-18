@@ -267,70 +267,112 @@ section h1 {
     margin-top: 0.25rem;
   }
 
+  /* --- STEP 2 カードのデザイン --- */
   .step-card-grid {
     display: grid;
-    /* スマホ・PC共通で1列 (縦並び) に設定 */
     grid-template-columns: 1fr; 
     gap: 2rem;
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
   }
   
   .step-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 1.5rem;
+    background-color: #f9f3eb;
+    border-radius: 20px;
+    padding: 1.5rem; /* スマホでの余白 */
+    display: flex;
+    flex-direction: column; /* デフォルトは縦並び（スマホ） */
+    gap: 1.2rem;
   }
   
-  /* STEPカード内の画像スタイル (既存) */
-  .step-card-image {
-    text-align: center;
-    margin-bottom: 1rem;
+  .step-card-visual {
+    flex-shrink: 0;
+    display: flex;          /* flexボックスにする */
+    flex-direction: column; /* 中身を縦に並べる */
+    align-items: center;    /* 中央に寄せる */
+    justify-content: center;
   }
 
-  .step-card-image img {
-    width: 80px;
-    height: 80px;
+  .step-card-visual img {
+    width: 90px;
+    height: 90px;
     object-fit: cover;
-    border-radius: 50%; /* 丸くする */
-    border: 3px solid #3b773b;
-    padding: 3px;
-    background-color: #fff;
-  }
-  
-  .step-card h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #3b773b;
-    margin-top: 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e9f2e9;
-    margin-bottom: 1rem;
-    text-align: center; /* カード内の小見出しも中央寄せ */
-  }
-  
-  .step-card ul {
-    list-style: none; /* リストマーカーを削除 */
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  
-  .step-card ul li {
-    font-size: 1rem;
-    color: #3d2d18;
-    margin-bottom: 0.7rem;
-    position: relative;
-    padding-left: 1.5rem;
+    border-radius: 50%;
+    margin: 0 auto;
   }
 
-  .step-card ul li::before {
-    content: '▶'; /* オリジナルのマーカーを三角に変更 */
-    color: #3b773b;
+
+  .step-badge {
+    display: inline-block;
+    background-color: #3d2d18;
+    color: white;
+    font-size: 0.7rem;
     font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 0.6rem;
+  }
+  
+  .step-content {
+    flex-grow: 1;
+  }
+
+  .step-content h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3b773b;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center; /* スマホでは中央寄せ */
+  }
+
+
+  .step-number {
+    background: #3b773b;
+    color: white;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+  
+  .step-description {
+    font-size: 0.9rem;
+    color: #3d2d18;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center; /* スマホでは中央寄せ */
+  }
+
+
+  /* 具体例のリスト */
+  .example-list {
+    display: grid;
+    grid-template-columns: 1fr; /* スマホは1列 */
+    gap: 0.5rem;
+  }
+
+  .example-item {
+    background-color: #fff;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: #3d2d18;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .example-item span {
+    color: #f39c12;
+    font-weight: bold;
+    flex-shrink: 0;
   }
 
 
@@ -531,6 +573,34 @@ figure {
     
     .sub-character-details {
       text-align: center;
+    }
+
+    .step-card {
+      flex-direction: row; /* PCでは横並び */
+      align-items: flex-start;
+      padding: 2rem;
+    }
+
+    .step-card-visual {
+       width: 120px; 
+      }
+
+    .step-card-visual img { 
+      width: 100px; 
+      height: 100px; 
+    }
+
+    .step-content h3 { 
+        font-size: 1.5rem; 
+        justify-content: flex-start; /* PCでは左寄せ */
+    }
+
+    .step-description { 
+      text-align: left; 
+    }
+
+    .example-list {
+      grid-template-columns: 1fr 1fr; /* PC/タブレットは2列 */
     }
 
   h1 {
