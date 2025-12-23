@@ -272,7 +272,6 @@ section h1 {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 2rem;
-    max-width: 900px;
     margin: 2rem auto;
   }
   
@@ -294,8 +293,8 @@ section h1 {
   }
 
   .step-card-visual img {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto;
@@ -343,7 +342,6 @@ section h1 {
   }
   
   .step-description {
-    font-size: 0.9rem;
     color: #3d2d18;
     margin-bottom: 1rem;
     line-height: 1.6;
@@ -362,7 +360,7 @@ section h1 {
     background-color: #fff;
     padding: 0.7rem;
     border-radius: 10px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #3d2d18;
     display: flex;
     align-items: flex-start;
@@ -506,7 +504,7 @@ figure {
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 1rem;
   transition: background 0.3s ease;
-  margin: 3rem 3rem;
+  margin: 1rem 1rem;
 }
 
 .back-btn:hover {
@@ -586,8 +584,8 @@ figure {
       }
 
     .step-card-visual img { 
-      width: 120px; 
-      height: 120px; 
+      width: 100px; 
+      height: 100px; 
     }
 
     .step-content h3 { 
